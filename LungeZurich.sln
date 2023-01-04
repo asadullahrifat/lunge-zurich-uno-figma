@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "LungeZurich.Shared", "LungeZurich\LungeZurich.Shared\LungeZurich.Shared.shproj", "{6279C845-92F8-4333-AB99-3D213163593C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{84D17B44-1495-4469-B7C1-47998A572E9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LungeZurich.Wasm", "LungeZurich\LungeZurich.Wasm\LungeZurich.Wasm.csproj", "{AED6F459-783E-4F7A-84F6-AB9831483CB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AED6F459-783E-4F7A-84F6-AB9831483CB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AED6F459-783E-4F7A-84F6-AB9831483CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AED6F459-783E-4F7A-84F6-AB9831483CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AED6F459-783E-4F7A-84F6-AB9831483CB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AED6F459-783E-4F7A-84F6-AB9831483CB4} = {84D17B44-1495-4469-B7C1-47998A572E9D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DAA84AA-7F3A-4F3A-AB5E-8107664AAFFC}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		LungeZurich\LungeZurich.Shared\LungeZurich.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
+		LungeZurich\LungeZurich.Shared\LungeZurich.Shared.projitems*{aed6f459-783e-4f7a-84f6-ab9831483cb4}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal

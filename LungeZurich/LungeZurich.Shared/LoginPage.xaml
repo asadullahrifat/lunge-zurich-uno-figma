@@ -1,0 +1,111 @@
+﻿<Page
+    x:Class="LungeZurich.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:LungeZurich"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:um="using:Uno.Material"
+    xmlns:utu="using:Uno.Toolkit.UI"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <Grid>
+        <utu:AutoLayout Background="{ThemeResource BackgroundBrush}">
+            <utu:AutoLayout utu:AutoLayout.PrimaryAlignment="Stretch" PrimaryAxisAlignment="Center">
+                <ScrollViewer Padding="0,8" utu:AutoLayout.PrimaryAlignment="Stretch">
+                    <utu:AutoLayout Padding="0,8" PrimaryAxisAlignment="Center">
+                        <utu:AutoLayout
+                            Width="464"
+                            Margin="10"
+                            Padding="32,32,32,48"
+                            utu:AutoLayout.CounterAlignment="Center"
+                            Background="{ThemeResource OnSecondaryBrush}"
+                            BorderBrush="{ThemeResource PrimaryVariantLightBrush}"
+                            BorderThickness="1.5"
+                            CornerRadius="8"
+                            PrimaryAxisAlignment="Center"
+                            Spacing="32">
+                            <utu:AutoLayout
+                                Width="110"
+                                utu:AutoLayout.CounterAlignment="Center"
+                                utu:AutoLayout.PrimaryAlignment="Stretch">
+                                <Image
+                                    Width="115"
+                                    Height="56.651"
+                                    HorizontalAlignment="Stretch"
+                                    VerticalAlignment="Stretch"
+                                    utu:AutoLayout.IsIndependentLayout="True"
+                                    Source="ms-appx:///Assets/Images/logo_brand.png" />
+                            </utu:AutoLayout>
+                            <utu:AutoLayout utu:AutoLayout.CounterAlignment="Center" Spacing="16">
+                                <TextBlock
+                                    utu:AutoLayout.CounterAlignment="Center"
+                                    Foreground="{ThemeResource OnSurfaceBrush}"
+                                    Style="{StaticResource DisplayMedium}"
+                                    Text="Log In" />
+                                <TextBlock
+                                    utu:AutoLayout.CounterAlignment="Center"
+                                    Foreground="{ThemeResource OnSurfaceMediumBrush}"
+                                    Style="{StaticResource BodySmall}"
+                                    Text="Please type your email and password below to login" />
+                            </utu:AutoLayout>
+                            <utu:AutoLayout Spacing="24">
+                                <utu:AutoLayout Spacing="16">
+                                    <TextBox
+                                        PlaceholderText="Email"
+                                        Style="{StaticResource OutlinedTextBoxStyle}"
+                                        Text="{Binding Username, Mode=TwoWay}" />
+                                    <TextBox
+                                        PlaceholderText="Password"
+                                        Style="{StaticResource OutlinedTextBoxStyle}"
+                                        Text="{Binding Password, Mode=TwoWay}" />
+                                    <Button
+                                        Height="48"
+                                        Background="{ThemeResource PrimaryBrush}"
+                                        Content="LOGIN"
+                                        CornerRadius="4" />
+                                </utu:AutoLayout>
+                                <utu:AutoLayout Spacing="4">
+                                    <HyperlinkButton utu:AutoLayout.CounterAlignment="Center" Content="Forgot Password?" />
+                                    <utu:AutoLayout
+                                        utu:AutoLayout.CounterAlignment="Center"
+                                        Orientation="Horizontal"
+                                        Spacing="4">
+                                        <TextBlock
+                                            utu:AutoLayout.CounterAlignment="Start"
+                                            Foreground="{ThemeResource OnSurfaceLowBrush}"
+                                            Style="{StaticResource LabelLarge}"
+                                            Text="Don’t have an account?" />
+                                        <HyperlinkButton
+                                            x:Name="RegisterButton"
+                                            utu:AutoLayout.CounterAlignment="Start"
+                                            Click="RegisterButton_Click"
+                                            Content="Register here." />
+                                    </utu:AutoLayout>
+                                </utu:AutoLayout>
+                                <utu:AutoLayout
+                                    Padding="0,16"
+                                    Orientation="Horizontal"
+                                    PrimaryAxisAlignment="Center"
+                                    Spacing="12">
+                                    <HyperlinkButton utu:AutoLayout.CounterAlignment="Center" Content="EN" />
+                                    <Line
+                                        Width="20"
+                                        Stroke="{ThemeResource PrimaryVariantLightBrush}"
+                                        StrokeThickness="1"
+                                        Y2="20" />
+                                    <TextBlock
+                                        utu:AutoLayout.CounterAlignment="Center"
+                                        Foreground="{ThemeResource OnSurfaceLowBrush}"
+                                        Style="{StaticResource LabelLarge}"
+                                        Text="DE" />
+                                </utu:AutoLayout>
+                            </utu:AutoLayout>
+                        </utu:AutoLayout>
+                    </utu:AutoLayout>
+                </ScrollViewer>
+            </utu:AutoLayout>
+        </utu:AutoLayout>
+    </Grid>
+</Page>
