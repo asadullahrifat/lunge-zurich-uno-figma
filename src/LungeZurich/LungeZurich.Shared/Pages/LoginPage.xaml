@@ -14,10 +14,11 @@
             <ScrollViewer Padding="0,8" utu:AutoLayout.PrimaryAlignment="Stretch">
                 <utu:AutoLayout Padding="0,8" PrimaryAxisAlignment="Center">
                     <utu:AutoLayout
-                        Width="364"
+                        MinWidth="364"
+                        MaxWidth="464"
                         Margin="10"
                         Padding="32,32,32,48"
-                        utu:AutoLayout.CounterAlignment="Center"
+                        utu:AutoLayout.CounterAlignment="Stretch"
                         Background="{ThemeResource OnSecondaryBrush}"
                         BorderBrush="{ThemeResource PrimaryVariantLightBrush}"
                         BorderThickness="1.5"
