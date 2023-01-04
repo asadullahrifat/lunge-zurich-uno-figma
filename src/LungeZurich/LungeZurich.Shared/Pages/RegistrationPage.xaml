@@ -19,11 +19,11 @@
             <ScrollViewer utu:AutoLayout.PrimaryAlignment="Stretch">
                 <utu:AutoLayout PrimaryAxisAlignment="Center">
                     <utu:AutoLayout
-                        Width="464"
-                        Height="620.651"
+                        MinWidth="364"
+                        MaxWidth="464"
                         Margin="10"
                         Padding="32,32,32,48"
-                        utu:AutoLayout.CounterAlignment="Center"
+                        utu:AutoLayout.CounterAlignment="Stretch"
                         Background="{ThemeResource OnSecondaryBrush}"
                         BorderBrush="{ThemeResource PrimaryVariantLightBrush}"
                         BorderThickness="1.5"
@@ -40,8 +40,7 @@
                                 HorizontalAlignment="Stretch"
                                 VerticalAlignment="Stretch"
                                 utu:AutoLayout.IsIndependentLayout="True"
-                                Source="ms-appx:///Assets/Images/logo_brand.png"
-                                Stretch="UniformToFill" />
+                                Source="ms-appx:///Assets/Images/logo_brand.png" />
                         </utu:AutoLayout>
                         <TextBlock
                             utu:AutoLayout.CounterAlignment="Center"
@@ -121,12 +120,13 @@
                         </utu:AutoLayout>
                     </utu:AutoLayout>
                     <utu:AutoLayout
-                        Width="464"
                         Height="100"
+                        MinWidth="364"
+                        MaxWidth="464"
                         Margin="10"
                         Orientation="Horizontal"
                         PrimaryAxisAlignment="Center"
-                        Spacing="152">
+                        Spacing="125">
                         <Button
                             x:Name="CancelButton"
                             Height="48"
@@ -134,12 +134,18 @@
                             utu:AutoLayout.PrimaryAlignment="Stretch"
                             Background="{ThemeResource OnPrimaryLowBrush}"
                             Click="CancelButton_Click"
-                            Content="Cancel"
                             CornerRadius="4"
                             Foreground="{ThemeResource OnBackgroundBrush}">
-                            <um:ControlExtensions.Icon>
+                            <!--<um:ControlExtensions.Icon>
                                 <PathIcon Data="{StaticResource Icon_Close}" Foreground="{ThemeResource OnBackgroundBrush}" />
-                            </um:ControlExtensions.Icon>
+                            </um:ControlExtensions.Icon>-->
+                            <StackPanel Orientation="Horizontal">
+                                <PathIcon
+                                    VerticalAlignment="Center"
+                                    Data="{StaticResource Icon_Close}"
+                                    Foreground="{ThemeResource OnBackgroundBrush}" />
+                                <TextBlock Margin="5,2,2,2" Text="Cancel" />
+                            </StackPanel>
                         </Button>
                         <Button
                             Height="48"
