@@ -19,8 +19,7 @@
             <ScrollViewer utu:AutoLayout.PrimaryAlignment="Stretch">
                 <utu:AutoLayout PrimaryAxisAlignment="Center">
                     <utu:AutoLayout
-                        Width="464"
-                        Height="620.651"
+                        Width="364"
                         Margin="10"
                         Padding="32,32,32,48"
                         utu:AutoLayout.CounterAlignment="Center"
@@ -40,8 +39,7 @@
                                 HorizontalAlignment="Stretch"
                                 VerticalAlignment="Stretch"
                                 utu:AutoLayout.IsIndependentLayout="True"
-                                Source="ms-appx:///Assets/Images/logo_brand.png"
-                                Stretch="UniformToFill" />
+                                Source="ms-appx:///Assets/Images/logo_brand.png" />
                         </utu:AutoLayout>
                         <TextBlock
                             utu:AutoLayout.CounterAlignment="Center"
@@ -121,7 +119,7 @@
                         </utu:AutoLayout>
                     </utu:AutoLayout>
                     <utu:AutoLayout
-                        Width="464"
+                        Width="364"
                         Height="100"
                         Margin="10"
                         Orientation="Horizontal"
